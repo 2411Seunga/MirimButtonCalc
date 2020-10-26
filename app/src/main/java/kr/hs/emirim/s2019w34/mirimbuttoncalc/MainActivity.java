@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_grid);
         edit1 = findViewById(R.id.edit1);
         edit2 = findViewById(R.id.edit2);
         for(int i = 0; i < btnN.length; i++) {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 edit2.setText(num2);
             } else {
                 Toast.makeText(getApplicationContext(), "EditText를 선택해주세요.", Toast.LENGTH_SHORT). show();
-                
+
             }
         }
     };
